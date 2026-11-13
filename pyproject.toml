@@ -2,7 +2,7 @@
 name = "merchant-intelligence-copilot"
 version = "0.1.0"
 description = "Agentic BI workflow for e-commerce merchants"
-authors = ["Your Name <your.email@example.com>"]
+authors = ["Ujjwal Singh <usingh2051@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
