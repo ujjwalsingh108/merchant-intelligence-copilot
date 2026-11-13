@@ -1,2 +1,36 @@
 # Notes
 notes.md
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Environment variables & secrets
+.env
+*.local.env
+.env.*
+
+# Modal temporary directories
+.modal/
+
+# Data and large checkpoints (mounted via Modal Volumes instead)
+data/checkpoints/
+data/cache/
+*.pdf
+*.png
+*.jpg
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE settings
+.vscode
+.idea/
