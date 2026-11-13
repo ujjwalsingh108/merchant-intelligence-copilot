@@ -1,0 +1,1 @@
+# Quick script to verify E2B environment

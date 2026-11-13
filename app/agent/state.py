@@ -1,0 +1,1 @@
+# TypedDict defining the agent's memory/state

@@ -1,0 +1,1 @@
+# Script to load Olist CSVs into Postgres

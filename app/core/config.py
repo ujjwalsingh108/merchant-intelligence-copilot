@@ -1,0 +1,1 @@
+# Pydantic BaseSettings for env vars (API keys, DB URIs)
