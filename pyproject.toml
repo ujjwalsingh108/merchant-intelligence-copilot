@@ -17,7 +17,7 @@ pydantic-settings = "^2.2.1"     # For production-grade environment variable val
 # --- AI, Orchestration & Observability ---
 langgraph = "^0.0.30"            # State machine for the agent workflow
 langchain = "^0.1.13"
-langchain-openai = "^0.1.1"      # Core wrapper for GPT-4o
+langchain-groq = "^0.1.2"        # Core wrapper for Groq
 langchain-anthropic = "^0.1.4"   # (Optional) If you want to use Claude 3.5 Sonnet
 langsmith = "^0.1.38"            # LLM tracing, evaluations, and observability
 tiktoken = "^0.6.0"              # Token counting for cost estimation

@@ -1,8 +1,9 @@
-# Local dev environment (Postgres, PgAdmin, App)
 version: '3.8'
+
 services:
-  db:
+  postgres:
     image: postgres:15-alpine
+    container_name: olist_db_container
     environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: secretpassword
@@ -10,7 +11,20 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - merchant_copilot_postgres_data:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin_ui
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@merchant.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    depends_on:
+      - postgres
+    restart: unless-stopped
 
 volumes:
-  merchant_copilot_postgres_data:
+  postgres_data:
